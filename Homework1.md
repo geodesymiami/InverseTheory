@@ -1,2 +1,9 @@
-# InverseTheory
-Data and Homework for class
+# Homework 2
+
+1.	Plot the normal distribution fit (Gaussian) and histograms of `data1.dat`, `data2.dat` and `data3.dat`. Which of the datasets are normal distributed?
+2.	Determine whether `data1` and `data2` are drawn from a normal distribution with some unknown mean and unit variance using a Chi-Square test. Also determine if `data3` is drawn from a normal distribution with some unknown mean and a standard deviation of 4 using the Chi-Square test. Make your conclusions at a stated confidence level.
+3.	For InSAR students: In your data identify two particularly noisy displacement time series (no tropospheric correction), one without and the other with a displacement signal.  From the second, remove the trend si that we have three timeseries to work with (the third is the residual time series.  Determine whether the data are drawn from a normal distribution using a Chi-Squared test.  Vary the length of the time series. Are particularly noisy periods still normal distributed?
+
+For (3) follow two approaches. First, get a time-series for a site of your choice from https://insarmaps.miami.edu using the ‘Download as TXT’ button.  Write code to remove a trend given by a first or second order polynomial or by an exponential function.  Second, use the MintPy function `timeseries2velocity.py` which supports a multitude of temporal deformation models. Quantify the uncertainties using the three implemented methods (`--uq residue`, `--uq covariance`,`--uq bootstrap`). Hint: Start with `timeseries2velocity.py`.
+
+For Giacomo: For the area of the June 2022 Chiles earthquake, estimate the co-seismic displacement using two approaches (i) linear velocity between two dates, (ii) assuming a step function allowing for both first and second order polynomial for the pre- and post-earthquake periods. Present results in a Jupiter Notebook or Powerpoint.
