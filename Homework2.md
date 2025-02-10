@@ -1,4 +1,4 @@
-# Homework 1
+# Homework 2
 
 1.	Plot the normal distribution fit (Gaussian) and histograms of `data1.dat`, `data2.dat` and `data3.dat`. Which of the datasets are normal distributed?
 2.	Determine in a rigorous manner whether `data1` and `data2` are drawn from a normal distribution with some unknown mean and unit variance using a Chi-Square test. Also determine if `data3` is drawn from a normal distribution with some unknown mean and a standard deviation of 4 using the Chi-Square test. Make your conclusions at a stated confidence level.
