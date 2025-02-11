@@ -1,9 +1,11 @@
-# Homework 2
+# Homework 1
 
-1.	Plot the normal distribution fit (Gaussian) and histograms of `data1.dat`, `data2.dat` and `data3.dat`. Which of the datasets are normal distributed?
-2.	Determine whether `data1` and `data2` are drawn from a normal distribution with some unknown mean and unit variance using a Chi-Square test. Also determine if `data3` is drawn from a normal distribution with some unknown mean and a standard deviation of 4 using the Chi-Square test. Make your conclusions at a stated confidence level.
-3.	For InSAR students: In your data identify two particularly noisy displacement time series (no tropospheric correction), one without and the other with a displacement signal.  From the second, remove the trend si that we have three timeseries to work with (the third is the residual time series.  Determine whether the data are drawn from a normal distribution using a Chi-Squared test.  Vary the length of the time series. Are particularly noisy periods still normal distributed?
+A. Suppose that you determine the masses of 100 objects by weighing the first, then weighing the first and second together, and then weighing the rest in triplets: the first, second, and third; the second, third, and fourth; and so forth. (A) Identify the data and model
+parameters in this problem. How many of each are there? (B) Write down the matrix **G** in the equation  **d** = **G** **m** that relates the data to the model parameters. (C) How sparse is **G**? How many element does it have and how many are zero? Give the percentage.
 
-For (3) follow two approaches. First, get a time-series for a site of your choice from https://insarmaps.miami.edu using the ‘Download as TXT’ button.  Write code to remove a trend given by a first or second order polynomial or by an exponential function.  Second, use the MintPy function `timeseries2velocity.py` which supports a multitude of temporal deformation models. Quantify the uncertainties using the three implemented methods (`--uq residue`, `--uq covariance`,`--uq bootstrap`). Hint: Start with `timeseries2velocity.py`.
+B. Let the data **d** be the running average of the model parameters, **m**, computed by averaging
+groups of three neighboring points; that is, `d_i= (m_i + m_i + m_i+1)/3. (A) What is the
+matrix G in the equation d¼ Gm in this case? (B) What problems arise at the top and
+bottom rows of the matrix and how can you deal with them? (C) How sparse is G?
+What percent of it is zero?
 
-For Giacomo: For the area of the June 2022 Chiles earthquake, estimate the co-seismic displacement using two approaches (i) linear velocity between two dates, (ii) assuming a step function allowing for both first and second order polynomial for the pre- and post-earthquake periods. Present results in a Jupiter Notebook or Powerpoint.
